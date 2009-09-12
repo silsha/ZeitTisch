@@ -25,9 +25,7 @@ $tage = array("Sonntag","Montag","Dienstag","Mittwoch", "Donnerstag","Freitag","
 if($tag == 5 OR $tag == 6){$next=1;}else{$next=$tag+1;} 	// Folgetag herausfinden
 if($tag == 6 OR $tag == 0){$last = 5;} else { $last = $tag;}  // Letzter Schultag herausfinden
 print "Letzter Schultag:   ".$tage[$last]."\nNaechster Schultag: ".$tage[$next]."\n\n";
-if($next == 6 OR $next == 0){
-	print "ACHTUNG! Morgen ist _KEINE_ Schule!";
-}else{
+
 	switch($next){
 		case 1: $day = $monday; break;
 		case 2: $day = $tuesday; break;
@@ -70,8 +68,6 @@ if($next == 6 OR $next == 0){
     for($i=0; $i < max(count($in),count($out)); $i++){
     $inout[] = array($in[$i],$out[$i]);}
     output_table($inout);
-       
-}
 
 print "\n";
 ?>
