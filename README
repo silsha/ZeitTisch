@@ -1,0 +1,29 @@
+ZeitTisch::About
+===========================
+ZeitTisch zeigt einen Stundenplan und eine Liste von Schulbuechern an, welche
+ein- und ausgepackt werden muessen, damit die Schultasche komplett gepackt ist.
+
+
+ZeitTisch::Konfiguration
+===========================
+In der config.php werden die Schulfaecher der einzelnen Tage und die benoetigten
+Buecher fuer die Faecher eingetragen.
+
+Beispiel:
+	$monday = array("Deutsch","Mathe","Englisch",NULL,"Sport");
+	// ...
+	$need['Deutsch'] = array("Deutschbuch","Deutsch Arbeitsheft");
+
+Freistunden werden als NULL eingetragen.
+	
+
+ZeitTisch::Nutzung
+===========================
+php zeittisch.php
+
+
+ZeitTisch::Credits
+===========================
+Programmiert von Felix 'silsha' Arndt
+
+Vielen Dank an NoMoKeTo (http://www.nomoketo.de/) fuer die Tabellenfunkntion.
