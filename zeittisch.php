@@ -43,14 +43,15 @@ if($next == 6 OR $next == 0){
         case 5: $dayl = $friday; break;
     }
     
+    $day = array_unique($day);
+    $dayl = array_unique($dayl);
+    
     $inout[] = array("Einpacken","Auspacken");
     for($i = 0; $i < count($day); $i++){									// Einpackliste
     	for($j = 0; $j < count($need[$day[$i]]); $j++){
-    		if($need[$day[$i]][$j] != $need[$day[$i-1]][$j]){
-    			if(isset($need[$day[$i]][$j])){
-    				if(!in_array($day[$i], $dayl)){
-    					$in[] = $need[$day[$i]][$j];
-    				}
+    		if(isset($need[$day[$i]][$j])){
+    			if(!in_array($day[$i], $dayl)){
+    				$in[] = $need[$day[$i]][$j];
     			}
     		}
     	}
@@ -58,11 +59,9 @@ if($next == 6 OR $next == 0){
     
     for($i = 0; $i < count($dayl); $i++){									// Auspackliste
     	for($j = 0; $j < count($need[$dayl[$i]]); $j++){
-    		if($need[$dayl[$i]][$j] != $need[$dayl[$i-1]][$j]){
-    			if(isset($need[$dayl[$i]][$j])){
-    				if(!in_array($dayl[$i], $day)){
-    					$out[] = $need[$dayl[$i]][$j];
-    				}
+    		if(isset($need[$dayl[$i]][$j])){
+    			if(!in_array($dayl[$i], $day)){
+    				$out[] = $need[$dayl[$i]][$j];
     			}
     		}
     	}
