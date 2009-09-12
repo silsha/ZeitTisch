@@ -15,10 +15,14 @@ Beispiel:
 	$need['Deutsch'] = array("Deutschbuch","Deutsch Arbeitsheft");
 
 Freistunden werden als NULL eingetragen.
+
+In der config.php befindet sich bereits eine Beispielkonfiguration.
 	
 
 ZeitTisch::Nutzung
 ===========================
+PHP >= 4.0 benoetigt.
+
 php zeittisch.php
 
 
