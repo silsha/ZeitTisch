@@ -21,7 +21,6 @@ for($i=0;$i < max(count($monday), count($tuesday), count($wednesday), count($thu
 output_table($table);
 
 $tag = date("w");		// Wochentag herausfinden
-$tag = 3;
 $tage = array("Sonntag","Montag","Dienstag","Mittwoch", "Donnerstag","Freitag","Samstag");
 if(!$late){
 	if($tag == 5 OR $tag == 6){$next=1;}else{$next=$tag+1;} 	// Folgetag herausfinden
