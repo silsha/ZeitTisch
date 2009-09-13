@@ -9,6 +9,9 @@
  *	Author: Felix Arndt <silsha23@gmail.com>
  *	Licence: MIT-Licence
  */
+ 
+ 	$late = FALSE;		// FALSE: Tasche wird ein Tag im Vorraus gepackt
+ 						// TRUE:  Tasche wird erst am Schultag gepackt
 	
 	// Schulfächer der einzelnen Tage eintragen
 	$monday 	= array("WiKu","WiKu","Deutsch",NULL,"Sport","Sport");
