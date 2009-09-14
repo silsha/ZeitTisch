@@ -9,8 +9,12 @@
  *	Author: Felix Arndt <silsha23@gmail.com>
  *	Licence: MIT-Licence
  */
- 
- 	$late = FALSE;		// FALSE: Tasche wird ein Tag im Vorraus gepackt
+ 	$auto = TRUE;		// TRUE: Wenn zeittisch VOR 12 Uhr ausgefuehrt wird, werden die
+ 						// Listen fuer den jeweiligen Tag angezeigt. Ansonster fuer den Folgetag.
+ 						
+ 						
+ 	$late = FALSE;		// !!! Wenn $auto aktiviert (TRUE) ist, wird diese Einstellung ignoriert.
+ 						// FALSE: Tasche wird ein Tag im Vorraus gepackt
  						// TRUE:  Tasche wird erst am Schultag gepackt
 	
 	// Schulfächer der einzelnen Tage eintragen
