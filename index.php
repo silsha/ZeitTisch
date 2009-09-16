@@ -26,7 +26,7 @@
 	</head>
 	<body>
 		<?php
-			echo '<div class="table"><table border="1" width="100%" />';
+			echo '<div class="table"><table border="0" width="100%" />';
 				echo '<tr><th>Montag</th><th>Dienstag</th><th>Mittwoch</th><th>Donnerstag</th><th>Freitag</th></tr>';
 				for($i=0;$i < max(count($monday), count($tuesday), count($wednesday), count($thursday), count($friday));$i++){
 					echo '<tr><td>'.$monday[$i].'</td><td>'.$tuesday[$i].'</td><td>'.$wednesday[$i].'</td><td>'.$thursday[$i].'</td><td>'.$friday[$i].'</td></tr>';
@@ -68,7 +68,6 @@
     
 			echo 'Letzter Schultag: '.$tage[$last].'<br />';
 			echo 'N&auml;chster Schultag: '.$tage[$next].'<br /><br />';
-			//echo 'Zeit: '.$
 			
 	for($i = 0; $i < count($day); $i++){									// Einpackliste
     	for($j = 0; $j < count($need[$day[$i]]); $j++){
@@ -89,7 +88,7 @@
     		}
     	}
     }
-	    echo '<table border="1" width="100%">';
+	    echo '<table border="0" width="100%">';
 	    echo '<tr><th width="50%">Einpacken</th><th width="50%">Auspacken</th></tr>';
 	for($i=0; $i < max(count($in),count($out)); $i++){
     echo '<tr><td>'.$in[$i].'</td><td>'.$out[$i].'</td></tr>';}

@@ -9,3 +9,35 @@ body{
 	font-size: 9px;
 	width: 100%;
 }
+
+table{
+	border:none;
+}
+td,th{
+	padding:.2em .5em;
+	vertical-align:top;
+	font-weight:normal;
+}
+thead th{
+	font-weight:bold;
+	font-size:90%;
+	vertical-align:bottom;
+	border-bottom:1px solid #000;
+	margin-bottom:5px;
+}
+tbody th,td{
+	border-right:1px solid #000;
+	border-left: 1px solid #000;
+}
+
+tbody td,tbody th{
+	padding:7px 10px;
+}
+tbody th{
+	border-left:1px solid #000;
+}
+tfoot td,tfoot th{
+	margin-top:5px;
+	border:none;
+	border-top:1px solid #000;
+}
