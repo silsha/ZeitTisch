@@ -1,0 +1,11 @@
+body{
+	font-family:Arial,Helvetica,Verdana,sans-serif;
+	background: #F2F2F2;
+	color: #0F50A6;
+}
+
+.table{
+	position: relative;
+	font-size: 9px;
+	width: 100%;
+}

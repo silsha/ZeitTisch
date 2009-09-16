@@ -25,6 +25,12 @@ PHP >= 4.0 benoetigt.
 
 php zeittisch.php
 
+ODER
+
+Die index.php ueber einen Webbrowser aufrufen. Wenn die Seite ueber ein iPhone
+oder einen iPod touch aufgerufen wird, wird eine angepasste Version angezeigt.
+Beispiel: http://www.felixarndt.de/zeittisch
+
 
 ZeitTisch::Credits
 ===========================
