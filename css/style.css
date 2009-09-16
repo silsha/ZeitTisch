@@ -17,6 +17,7 @@ td,th{
 	padding:.2em .5em;
 	vertical-align:top;
 	font-weight:normal;
+	border-bottom: 1px solid #000;
 }
 thead th{
 	font-weight:bold;
