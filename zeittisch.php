@@ -76,10 +76,10 @@ print "Letzter Schultag:   ".$tage[$last]."\nNaechster Schultag: ".$tage[$next].
     		}
     	}
     }
-    
+if(count($in) != 0 OR count($out) != 0){    
     for($i=0; $i < max(count($in),count($out)); $i++){
     $inout[] = array($in[$i],$out[$i]);}
     output_table($inout);
-
+}
 print "\n";
 ?>

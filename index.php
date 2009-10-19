@@ -88,11 +88,13 @@
     		}
     	}
     }
+if(count($in) != 0 OR count($out) != 0){
 	    echo '<table border="0" width="100%">';
 	    echo '<tr><th width="50%">Einpacken</th><th width="50%">Auspacken</th></tr>';
 	for($i=0; $i < max(count($in),count($out)); $i++){
     echo '<tr><td>'.$in[$i].'</td><td>'.$out[$i].'</td></tr>';}
     echo '</table>';
+}
 		?>
 	</body>
 </html>
